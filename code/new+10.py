@@ -55,7 +55,7 @@ meiqiming_7 = len(temp[temp == 5]) + len(temp[temp == 13])
 print('meiqiming_7 =', meiqiming_7)		# 
 
 ############################################
-# 功能7： 功能5和6的人加在一起，在20180127.xlsx中出，在列is_consigned等于1的客户数, 列 label_value等于1,2,3各自的客户数
+# 功能7： 功能5和6的人加在一起，在20180127.xlsx中出，在列is_consigned的第一行等于1的客户数, 列 label_value的第一行等于1,2,3各自的客户数
 path_in = '/home/m/桌面/for_huihui/data/'
 once_dealer = pd.read_excel(path_in + 'once_dealer.xlsx')
 once_dealer = list(once_dealer.iloc[:,0])
