@@ -221,7 +221,7 @@ temp2 = temp.copy()
 temp2 = (temp2 * 100).apply(int).apply(str) + '%'
 data2['new_2'] = temp2
 
-data3 = data2[ list(data2.columns[:-2]) + 'new_2' + 'new_3' ]
+data3 = data2[ list(data2.columns[:-2]) + ['new_2'] + ['new_3'] ]
 data3.to_excel( path_in + '20180206_output.xlsx' )
 
 
